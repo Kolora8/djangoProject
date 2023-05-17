@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'coolsite.apps.CoolsiteConfig',
+    'women.apps.WomenConfig'
 ]
 
 MIDDLEWARE = [
