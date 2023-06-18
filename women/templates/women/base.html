@@ -64,10 +64,20 @@
 	{% endblock %}
 
 <!-- Блок контента -->
-	<div class="content-text">
-{% block content %}
-{% endblock %}
-	</div>
+    <div class="content-text">
+    {% block content %}
+    {% endblock %}
+<nav class="list-pages">
+    <ul>
+        {% for p in paginator.page_range %}
+        <li class="page-num">
+            <a href="?page {{ p }}">{{ p }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>
+
+    </div>
 <!-- Конец блока контента -->
 
 </td></tr></table>
@@ -75,7 +85,7 @@
 <!-- Footer -->
 <tr><td valign=top>
 	<div id="footer">
-		<p>&copy; 2021 Частичное или полное копирование информации с данного сайта для распространения на других ресурсах, в том числе и бумажных, строго запрещено.</p>
+		<p>&copy; 2023 Частичное или полное копирование информации с данного сайта для распространения на других ресурсах, в том числе и бумажных, строго запрещено.</p>
 	</div>
 </td></tr></table>
 <!-- Конец footer'а и страницы -->
